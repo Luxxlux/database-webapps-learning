@@ -171,7 +171,7 @@ ALTER COLUMN year TYPE INT;
 
 SELECT * FROM products;
 
--- Activity 6
+-- Activity 6.1
 
 -- Precursers
 DROP TABLE IF EXISTS products_new;
@@ -216,3 +216,16 @@ $$ LANGUAGE plpgsql;
 
 SELECT update_products();
 SELECT * FROM products_new;
+
+
+-- Activity 6.2
+SELECT last_name, first_name, email 
+FROM customers
+ORDER BY last_name;
+
+-- Activity 6.3
+SELECT *
+FROM customers
+WHERE phone IS NOT NULL
+ORDER BY date_added;
+
