@@ -217,6 +217,7 @@ $$ LANGUAGE plpgsql;
 SELECT update_products();
 SELECT * FROM products_new;
 
+DROP TABLE products_new;
 
 -- Activity 6.2
 SELECT last_name, first_name, email 
